@@ -1,6 +1,6 @@
 # Burer-Monteiro Visualizer
 
-This project is a visualizer for running the Burer-Monteiro heuristic to solve semidefinite programs (SDPs).
+This is a visualizer for running the Burer-Monteiro heuristic to solve semidefinite programs (SDPs).
 Specifically, it is for the Goemans-Williamson max-cut SDP.  For running this heuristic for rank (dimension) 2 and
 3, we provide a visualization of the gradient descent algorithm.  For higher dimensions, it no longer makes
 sense to have a visualization, however the rest of the functionality that runs gradient descent is still 
