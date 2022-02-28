@@ -12,7 +12,7 @@ This app is published at
 
 ## Algorithm 
 
-# Background on this problem
+<!-- ### Background on this problem
 
 The Goemans-Williamson max-cut semidefinite program is a relaxation of the max-cut problem that 
 can be solved in polynomial time, and leads to an algorithm achieving a 0.878 approximation 
@@ -56,7 +56,7 @@ descent on the formulation in terms of $V$.
 
 Unfortunately, this problem is *not* convex, and could potentially have spurious local minima.
 
-# This implementation
+### This implementation -->
 
 In this implementation, we take the weighted graph and the starting position of each vector
 as input.  Then on each update step we do the following:
