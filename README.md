@@ -73,7 +73,7 @@ perturbation is taken as an input, and the perturbation is chosen uniformly from
 ## Contributing to the code
 
 This project is written in `react`.  Once you have the git repo cloned, you can contribute to 
-the code by following these steps
+the code by following these steps.
 
 ### Install the node project manager
 
@@ -100,6 +100,15 @@ locally run
     npm start
 
 from the top level directory.
+
+### Edit the code
+
+The functionality of the visualizer is all in files in the `src` directory.  
+The file `BurerMonteiro.js` is a good place to start.  
+
+Files in the `public` directory, along with a few files in the `src` directory
+(`index.js`, `index.css`, `Main.js`) are there to host the site and do other
+logistical tasks that you probably don't want to mess with.
 
 ### Push your changes
 
