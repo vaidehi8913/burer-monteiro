@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './Main';
+import Main from './Main.js';
 //import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Main /> */}
+    <Main />
 
-    This is the Burer-Monteiro visualizer!
+    {/* This is the Burer-Monteiro visualizer! */}
   </React.StrictMode>,
   document.getElementById('root')
 );
