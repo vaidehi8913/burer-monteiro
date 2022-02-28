@@ -63,11 +63,11 @@ as input.  Then on each update step we do the following:
 
 1. We calculate the Euclidean gradient of index of each vector with respect to the objective
 function.  (Since the objective function is a dot product, this is a very simple linear 
-function to calculate)
-2. We add the step size (taken as input) times the negative gradient to each index of each vector
+function to calculate.)
+2. We add the step size (taken as input) times the negative gradient to each index of each vector.
 3. We add a random perturbation to each index of each vector.  The magnitude $m$ of the 
 perturbation is taken as an input, and the perturbation is chosen uniformly from $[-m, m]$.
-4. We normalize all vectors so that they are unit length again
+4. We normalize all vectors so that they are unit length again.
 
 
 ## Contributing to the code
@@ -95,11 +95,16 @@ from the top level directory.
 ### Run the project locally
 
 When editing the project, it is useful to run it locally.  To run the project
-locally run 
+locally, run 
 
     npm start
 
-from the top level directory.
+from the top level directory.  This automatically pop up a version running 
+locally.  If you aren't seeing it, trying going to 
+
+    localhost:3000/burer-monteiro
+
+in your browser.
 
 ### Edit the code
 
@@ -109,6 +114,9 @@ The file `BurerMonteiro.js` is a good place to start.
 Files in the `public` directory, along with a few files in the `src` directory
 (`index.js`, `index.css`, `Main.js`) are there to host the site and do other
 logistical tasks that you probably don't want to mess with.
+
+Every time you save a file, it should automatically instantly update the locally
+running version (if you have `npm start` running).
 
 ### Push your changes
 
