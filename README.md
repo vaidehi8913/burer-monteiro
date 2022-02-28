@@ -109,7 +109,8 @@ in your browser.
 ### Edit the code
 
 The functionality of the visualizer is all in files in the `src` directory.  
-The file `BurerMonteiro.js` is a good place to start.  
+The file `BurerMonteiro.js` is a good place to start.  Make sure you are editing
+the `master` branch.
 
 Files in the `public` directory, along with a few files in the `src` directory
 (`index.js`, `index.css`, `Main.js`) are there to host the site and do other
@@ -131,3 +132,7 @@ of the site, you should run
     npm run deploy
 
 from the top level directory.  The changes may take 5-6 minutes to refresh.
+(This will get `npm` to build the project, and commit the new version to 
+the `gh-pages` branch, where guthub pages with load it from.  Don't try to 
+mess with the `gh-pages` branch directly, you may upset the balance of the
+universe.)
