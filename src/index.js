@@ -6,7 +6,9 @@ import Main from './Main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
+    {/* <Main /> */}
+
+    This is the Burer-Monteiro visualizer!
   </React.StrictMode>,
   document.getElementById('root')
 );
