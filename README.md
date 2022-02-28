@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Burer-Monteiro Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a visualizer for running the Burer-Monteiro heuristic to solve semidefinite programs (SDPs).
+Specifically, it is for the Goemans-Williamson max-cut SDP.  For running this heuristic for rank (dimension) 2 and
+3, we provide a visualization of the gradient descent algorithm.  For higher dimensions, it no longer makes
+sense to have a visualization, however the rest of the functionality that runs gradient descent is still 
+implemented and usable.
 
-## Available Scripts
+This app is published at 
 
-In the project directory, you can run:
+    https://vaidehi8913.github.io/burer-monteiro
 
-### `npm start`
+## Algorithm 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+More about the algorithm will eventually go here when I get around to writing it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing to the code
 
-### `npm test`
+This project is written in `react`.  Once you have the git repo cloned, you can contribute to 
+the code by following these steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Install the node project manager
 
-### `npm run build`
+**If you have never worked with react before**, make sure that you have the node project 
+manager installed.  You can find it here.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project uses a few other packages that you need to install.  Luckily, the node
+project manager is here to help you with exactly that.  **If this is your first time** 
+**running the project (or you just pulled updates that changed the dependencies)**, run
 
-### `npm run eject`
+    npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+from the top level directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run the project locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When editing the project, it is useful to run it locally.  To run the project
+locally run 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    npm start
 
-## Learn More
+from the top level directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Push your changes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you are updating the code, make sure to commit and push your changes to 
+git. Then...
 
-### Code Splitting
+### Deploy changes to the site
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To make sure that your changes will actually show up on the published version
+of the site, you should run 
 
-### Analyzing the Bundle Size
+    npm run deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+from the top level directory.  The changes may take 5-6 minutes to refresh.
