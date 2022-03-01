@@ -87,6 +87,6 @@ of the site, you should run
 
 from the top level directory.  The changes may take 5-6 minutes to refresh.
 (This will get `npm` to build the project, and commit the new version to 
-the `gh-pages` branch, where guthub pages with load it from.  Don't try to 
+the `gh-pages` branch, where github pages with load it from.  Don't try to 
 mess with the `gh-pages` branch directly, you may upset the balance of the
 universe.)
