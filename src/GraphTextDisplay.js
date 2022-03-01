@@ -220,8 +220,15 @@ class GraphTextDisplay extends Component {
             }
         );
 
+        var objectiveValue = multipliers.reduce((a, b) => a + b, 0);
+        var formattedObjectiveValue = Number(objectiveValue).toFixed(4);
+
         return (
             <div>
+                <b> Objective Value: </b>
+                {formattedObjectiveValue}
+                
+                <br/><br/>
                 <b> Multipliers: </b>
                 <div style={graphWrapperStyle}>
                     {headerRow}
