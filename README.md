@@ -19,8 +19,8 @@ as input.  Then on each update step we do the following:
 function.  (Since the objective function is a dot product, this is a very simple linear 
 function to calculate.)
 2. We add the step size (taken as input) times the negative gradient to each index of each vector.
-3. We add a random perturbation to each index of each vector.  The magnitude $m$ of the 
-perturbation is taken as an input, and the perturbation is chosen uniformly from $[-m, m]$.
+3. We add a random perturbation to each index of each vector.  The magnitude `m` of the 
+perturbation is taken as an input, and the perturbation is chosen uniformly from `[-m, m]`.
 4. We normalize all vectors so that they are unit length again.
 
 
@@ -53,8 +53,8 @@ locally, run
 
     npm start
 
-from the top level directory.  This automatically pop up a version running 
-locally.  If you aren't seeing it, trying going to 
+from the top level directory.  This should automatically pop up a version 
+running locally.  If you aren't seeing it, trying going to 
 
     localhost:3000/burer-monteiro
 
