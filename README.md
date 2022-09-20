@@ -1,7 +1,7 @@
 This repository contains materials associated with the paper 
 
 > The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki Bound  
-> *Liam O'Carroll, [Vaidehi Srinivas](vaidehi8913.github.io), [Aravindan Vijayaraghavan](users.cs.northwestern.edu/~aravindv/)*  
+> *[Liam O'Carroll](https://liamocarroll.github.io), [Vaidehi Srinivas](https://vaidehi8913.github.io), [Aravindan Vijayaraghavan](https://users.cs.northwestern.edu/~aravindv/)*  
 > *NeurIPS 2022.*
 
 ## Experiments 

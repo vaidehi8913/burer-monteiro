@@ -12,7 +12,7 @@ This app is published at
 
 We developed this tool as part of 
 > The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki bound  
-> *Liam O'Carroll, [Vaidehi Srinivas](vaidehi8913.github.io), [Aravindan Vijayaraghavan](users.cs.northwestern.edu/~aravindv/)*  
+> *[Liam O'Carroll](https://liamocarroll.github.io), [Vaidehi Srinivas](https://vaidehi8913.github.io), [Aravindan Vijayaraghavan](https://users.cs.northwestern.edu/~aravindv/)*  
 > *NeurIPS 2022.*
 
 ## Algorithm/Implementation 

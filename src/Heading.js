@@ -93,7 +93,8 @@ class Heading extends Component {
                 functionality that runs gradient descent is still implemented and usable.</p>
 
                 <p>We developed this tool for <i>The Burer-Monteiro SDP method
-                can fail even above the Barvinok-Pataki bound (Liam O'Carroll,  
+                can fail even above the Barvinok-Pataki bound 
+                (<a href="https://liamocarroll.github.io">Liam O'Carroll</a>,  
                 {' '}<a href="https://vaidehi8913.github.io" target="_blank">Vaidehi Srinivas</a>, 
                 {' '}<a href="https://users.cs.northwestern.edu/~aravindv/" target="_blank">Aravindan Vijayaraghavan</a>,
                 {' '}NeurIPS 2022)</i>. 
