@@ -1,0 +1,39 @@
+Experiment SUMMARY 
+GAUSSIAN cost matrix construction and FULLY RANDOM initialization
+expID: exp07-30-22-19-36-18/
+
+n = 10, p = 5
+# cost matrices: 20
+trials per cost matrix: 1
+# trials spurious (per cost matrix): 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0
+total trials (all matrices): 20
+total spurious trials (all matrices): 8
+
+n = 20, p = 10
+# cost matrices: 20
+trials per cost matrix: 1
+# trials spurious (per cost matrix): 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1
+total trials (all matrices): 20
+total spurious trials (all matrices): 15
+
+n = 50, p = 25
+# cost matrices: 20
+trials per cost matrix: 1
+# trials spurious (per cost matrix): 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1
+total trials (all matrices): 20
+total spurious trials (all matrices): 11
+
+n = 100, p = 50
+# cost matrices: 20
+trials per cost matrix: 1
+# trials spurious (per cost matrix): 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1
+total trials (all matrices): 20
+total spurious trials (all matrices): 13
+
+n = 200, p = 100
+# cost matrices: 20
+trials per cost matrix: 1
+# trials spurious (per cost matrix): 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1
+total trials (all matrices): 20
+total spurious trials (all matrices): 13
+

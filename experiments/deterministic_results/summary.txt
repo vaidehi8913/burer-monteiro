@@ -1,0 +1,40 @@
+Experiment SUMMARY
+DETERMINISTIC cost matrix construction, initialization PERTURBED from Yaxial
+expID: exp07-29-22-09-42-25/
+
+n = 4, p = 2
+trials per perturbation value: 1000
+perturbation magnitude: 0.3, # trials spurious: 546
+perturbation magnitude: 0.29, # trials spurious: 575
+perturbation magnitude: 0.28, # trials spurious: 556
+perturbation magnitude: 0.27, # trials spurious: 574
+perturbation magnitude: 0.26, # trials spurious: 605
+perturbation magnitude: 0.25, # trials spurious: 593
+
+n = 50, p = 25
+trials per perturbation value: 100
+perturbation magnitude: 0.3, # trials spurious: 26
+perturbation magnitude: 0.29, # trials spurious: 35
+perturbation magnitude: 0.28, # trials spurious: 58
+perturbation magnitude: 0.27, # trials spurious: 73
+perturbation magnitude: 0.26, # trials spurious: 81
+perturbation magnitude: 0.25, # trials spurious: 90
+
+n = 200, p = 100
+trials per perturbation value: 100
+perturbation magnitude: 0.3, # trials spurious: 0
+perturbation magnitude: 0.29, # trials spurious: 2
+perturbation magnitude: 0.28, # trials spurious: 15
+perturbation magnitude: 0.27, # trials spurious: 32
+perturbation magnitude: 0.26, # trials spurious: 75
+perturbation magnitude: 0.25, # trials spurious: 93
+
+n = 1000, p = 500
+trials per perturbation value: 50
+perturbation magnitude: 0.3, # trials spurious: 0
+perturbation magnitude: 0.29, # trials spurious: 0
+perturbation magnitude: 0.28, # trials spurious: 3
+perturbation magnitude: 0.27, # trials spurious: 35
+perturbation magnitude: 0.26, # trials spurious: 50
+perturbation magnitude: 0.25, # trials spurious: 50
+

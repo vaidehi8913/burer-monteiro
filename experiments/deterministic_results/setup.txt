@@ -1,0 +1,20 @@
+Experiment SETUP (for outcomes see SUMMARY file)
+DETERMINISTIC cost matrix construction, initialization PERTURBED from Yaxial
+expID: exp07-29-22-09-42-25/
+
+n = 4p = 2
+perturbation values: 0.3, 0.29, 0.28, 0.27, 0.26, 0.25
+trials: 1000
+
+n = 50p = 25
+perturbation values: 0.3, 0.29, 0.28, 0.27, 0.26, 0.25
+trials: 100
+
+n = 200p = 100
+perturbation values: 0.3, 0.29, 0.28, 0.27, 0.26, 0.25
+trials: 100
+
+n = 1000p = 500
+perturbation values: 0.3, 0.29, 0.28, 0.27, 0.26, 0.25
+trials: 50
+
