@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/burer-monteiro/static/css/main.e6c13ad2.css",
-    "main.js": "/burer-monteiro/static/js/main.59ccf5ae.js",
+    "main.js": "/burer-monteiro/static/js/main.f7401978.js",
     "index.html": "/burer-monteiro/index.html",
     "main.e6c13ad2.css.map": "/burer-monteiro/static/css/main.e6c13ad2.css.map",
-    "main.59ccf5ae.js.map": "/burer-monteiro/static/js/main.59ccf5ae.js.map"
+    "main.f7401978.js.map": "/burer-monteiro/static/js/main.f7401978.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.59ccf5ae.js"
+    "static/js/main.f7401978.js"
   ]
 }

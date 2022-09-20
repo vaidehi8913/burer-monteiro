@@ -1,7 +1,7 @@
 # Burer-Monteiro Visualizer
 
-This is a javascript visualizer for running the Burer-Monteiro heuristic to solve semidefinite programs (SDPs).
-Specifically, it is for the Goemans-Williamson max-cut SDP.  For rank (dimension) 2 and 3, we provide 
+This is a javascript visualizer for running the Burer-Monteiro method to solve semidefinite programs (SDPs).
+Specifically, it is for instances of the Goemans-Williamson max-cut SDP.  For rank (dimension) 2 and 3, we provide 
 a visualization of the gradient descent algorithm.  For higher dimensions, it no longer makes sense 
 to have a visualization, but the rest of the functionality that runs gradient descent is still 
 implemented and usable.
@@ -11,7 +11,7 @@ This app is published at
     https://vaidehi8913.github.io/burer-monteiro
 
 We developed this tool as part of 
-> The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki Bound  
+> The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki bound  
 > *Liam O'Carroll, [Vaidehi Srinivas](vaidehi8913.github.io), [Aravindan Vijayaraghavan](users.cs.northwestern.edu/~aravindv/)*  
 > *NeurIPS 2022.*
 
@@ -37,22 +37,27 @@ The main contribution of our paper was to find Burer-Monteiro instances with spu
 ### 2 dimensions
 
 Graph (pseudo-PD cost matrix):
+```
        a   b   c   d
     a  0   1  0.5  1
     b  1   0   1  0.5
     c 0.5  1   0   1
     d  1   0.5 1   0
+```
 
 Vector positions:
+```
     label   x   y
       a     1   0
       b     0   1
       c    -1   0
       d     0  -1
+```
 
 ### 3 dimensions
 
 Graph (pseudo-PD cost matrix):
+```
          a     b     c     d     e     f
     a    0   -0.6  -0.6    1   -0.6  -0.6
     b  -0.6    0   -0.6  -0.6    1   -0.6
@@ -60,8 +65,10 @@ Graph (pseudo-PD cost matrix):
     d    1   -0.6  -0.6    0   -0.6  -0.6
     e  -0.6    1   -0.6  -0.6    0   -0.6
     f  -0.6  -0.6    1   -0.6  -0.6    0
+```
 
 Vector positions:
+```
     label   x   y   z
       a     1   0   0
       b     0   1   0
@@ -69,7 +76,7 @@ Vector positions:
       d    -1   0   0
       e     0  -1   0
       f     0   0  -1
-
+```
 
 ## Contributing to the code
 
