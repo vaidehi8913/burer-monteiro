@@ -10,6 +10,6 @@ The ``experiments`` directory contains the MATLAB code we used to generate our
 data, as well as the data that we generated.  
 
 ## Visualizer
-The ``src`` directory has the react implementation of our [visualizer](vaidehi8913.github.ip/burer-monteiro).  
+The ``src`` directory has the react implementation of our [visualizer](https://vaidehi8913.github.ip/burer-monteiro).  
 
 More details about each section can be found in their respective READMEs.
