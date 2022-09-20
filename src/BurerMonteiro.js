@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import TwoDVectorDisplay from "./TwoDVectorDisplay";
 import VectorTextDisplay from "./VectorTextDisplay";
 import GraphTextDisplay from "./GraphTextDisplay";
+import Heading from "./Heading";
+
 
 class BurerMonteiro extends Component {
 
@@ -339,10 +341,17 @@ class BurerMonteiro extends Component {
 
         var topLevelWrapperStyle = {
             display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "50px"
+        };
+
+        var contentWrapperStyle = {
+            display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            gap: "20px",
-            marginTop: "100px"
+            gap: "20px"
         };
 
         var vectorDisplay = null;
@@ -362,26 +371,32 @@ class BurerMonteiro extends Component {
 
         return (
             <div style={topLevelWrapperStyle}>
-                {vectorDisplay}
-                <VectorTextDisplay passUpVectors={this.passUpVectors}
-                                   addNewVectorToGraph={this.addNewVectorToGraph}
-                                   isRunning={this.state.isRunning}
-                                   controlRun={this.controlRun}
-                                   updateStepSize={this.updateStepSize}
-                                   stepSize={this.state.stepSize}
-                                   updateDimension={this.updateDimension}
-                                   dimension={this.state.dimension}
-                                   initVectors={this.state.initialVectors}
-                                   currentVectors={this.state.currentVectors}
-                                   tickTime={this.state.tickTime}
-                                   updateTickTime={this.updateTickTime}
-                                   perturbWithin={this.state.perturbWithin}
-                                   updatePerturbWithin={this.updatePerturbWithin}
-                                   resetVectors={this.resetVectors}/>
-                <GraphTextDisplay graph={this.state.graph}
-                                  vecs={this.state.currentVectors}
-                                  updateGraph={this.updateGraph}/>
+                
+                <Heading/>
+
+                <div style={contentWrapperStyle}>
+                    {vectorDisplay}
+                    <VectorTextDisplay passUpVectors={this.passUpVectors}
+                                    addNewVectorToGraph={this.addNewVectorToGraph}
+                                    isRunning={this.state.isRunning}
+                                    controlRun={this.controlRun}
+                                    updateStepSize={this.updateStepSize}
+                                    stepSize={this.state.stepSize}
+                                    updateDimension={this.updateDimension}
+                                    dimension={this.state.dimension}
+                                    initVectors={this.state.initialVectors}
+                                    currentVectors={this.state.currentVectors}
+                                    tickTime={this.state.tickTime}
+                                    updateTickTime={this.updateTickTime}
+                                    perturbWithin={this.state.perturbWithin}
+                                    updatePerturbWithin={this.updatePerturbWithin}
+                                    resetVectors={this.resetVectors}/>
+                    <GraphTextDisplay graph={this.state.graph}
+                                    vecs={this.state.currentVectors}
+                                    updateGraph={this.updateGraph}/>
+                </div>
             </div>
+
         );
     }
 }

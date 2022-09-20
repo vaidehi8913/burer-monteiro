@@ -10,20 +10,65 @@ This app is published at
 
     https://vaidehi8913.github.io/burer-monteiro
 
+We developed this tool as part of 
+> The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki Bound  
+> *Liam O'Carroll, [Vaidehi Srinivas](vaidehi8913.github.io), [Aravindan Vijayaraghavan](users.cs.northwestern.edu/~aravindv/)*  
+> *NeurIPS 2022.*
+
 ## Algorithm/Implementation 
 
 In this implementation, we take the weighted graph and the starting position of each vector
-as input.  Then on each update step we do the following:
+as input.  Then we run *perturbed projected gradient descent*.  On each update step we do the following:
 
-1. We calculate the Euclidean gradient of index of each vector with respect to the objective
-function.  (Since the objective function is a dot product, this is a very simple linear 
-function to calculate.)
-2. We add the step size (taken as input) times the negative gradient to each index of each vector.
-3. We add a random perturbation to each index of each vector.  The magnitude `m` of the 
+1. Calculate the Euclidean gradient of index of each vector with respect to the objective
+function.  (Since the objective function is a dot product, this is a simple linear 
+function.)
+2. Add the step size (taken as input) times the negative gradient to each index of each vector.
+3. Add a random perturbation to each index of each vector.  The magnitude `m` of the 
 perturbation is taken as an input, and the perturbation is chosen uniformly from `[-m, m]`.
-4. We normalize all vectors so that they are unit length again.
+4. Normalize all vectors so that they are unit length again.
 
-It is worth noting that this is an implementation of **projected gradient descent**, and not **Riemannian gradient descent**.
+It is worth noting that this is an implementation of perturbed projected gradient descent, which is somewhat different from the (un-pertubed) *Riemannian gradient descent* that we analyze in our paper.  However, it is easier to implement, and for our visualization purposes it doesn't really make much of a difference.
+
+## Fun instances
+
+The main contribution of our paper was to find Burer-Monteiro instances with spurious local minima, at rank up to ``n/2``, where ``n`` is the number of vertices.  Here, we give concrete examples in 2 and 3 dimensions that can be plugged in to the visualizer.
+
+### 2 dimensions
+
+Graph (pseudo-PD cost matrix):
+       a   b   c   d
+    a  0   1  0.5  1
+    b  1   0   1  0.5
+    c 0.5  1   0   1
+    d  1   0.5 1   0
+
+Vector positions:
+    label   x   y
+      a     1   0
+      b     0   1
+      c    -1   0
+      d     0  -1
+
+### 3 dimensions
+
+Graph (pseudo-PD cost matrix):
+         a     b     c     d     e     f
+    a    0   -0.6  -0.6    1   -0.6  -0.6
+    b  -0.6    0   -0.6  -0.6    1   -0.6
+    c  -0.6  -0.6    0   -0.6  -0.6    1
+    d    1   -0.6  -0.6    0   -0.6  -0.6
+    e  -0.6    1   -0.6  -0.6    0   -0.6
+    f  -0.6  -0.6    1   -0.6  -0.6    0
+
+Vector positions:
+    label   x   y   z
+      a     1   0   0
+      b     0   1   0
+      c     0   0   1
+      d    -1   0   0
+      e     0  -1   0
+      f     0   0  -1
 
 
 ## Contributing to the code

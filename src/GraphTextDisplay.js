@@ -263,7 +263,7 @@ class GraphTextDisplay extends Component {
                 {this.generateGraphDisplay()}
 
                 {/* <b>Multipliers:</b> */}
-                {this.generateMultiplierDisplay()}
+                {/* this.generateMultiplierDisplay() */}
             </div>
         );
     }
