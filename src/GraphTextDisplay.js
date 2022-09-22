@@ -228,7 +228,7 @@ class GraphTextDisplay extends Component {
                 <b> Objective Value: </b>
                 {formattedObjectiveValue}
                 
-                <br/><br/>
+                {/*<br/><br/>
                 <b> Multipliers: </b>
                 <div style={graphWrapperStyle}>
                     {headerRow}
@@ -239,7 +239,7 @@ class GraphTextDisplay extends Component {
                 <b> (A - diag(lambda)) * Y :</b>
                 <div style={graphWrapperStyle}>
                     {formattedEntries}
-                </div>
+                </div>*/}
             </div>
             
         );
@@ -263,7 +263,7 @@ class GraphTextDisplay extends Component {
                 {this.generateGraphDisplay()}
 
                 {/* <b>Multipliers:</b> */}
-                {/* this.generateMultiplierDisplay() */}
+                {this.generateMultiplierDisplay()}
             </div>
         );
     }
