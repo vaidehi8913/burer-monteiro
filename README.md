@@ -6,10 +6,10 @@ This repository contains materials associated with the paper
 
 ## Experiments 
 
-The ``experiments`` directory contains the MATLAB code we used to generate our 
+The [``experiments`` directory](https://github.com/vaidehi8913/burer-monteiro/tree/main/experiments) contains the MATLAB code we used to generate our 
 data, as well as the data that we generated.  
 
 ## Visualizer
-The ``src`` directory has the react implementation of our [visualizer](https://vaidehi8913.github.ip/burer-monteiro).  
+The [``src`` directory](https://github.com/vaidehi8913/burer-monteiro/tree/main/src) has the react implementation of our [visualizer](https://vaidehi8913.github.io/burer-monteiro).  
 
 More details about each section can be found in their respective READMEs.

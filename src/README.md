@@ -6,9 +6,7 @@ a visualization of the gradient descent algorithm.  For higher dimensions, it no
 to have a visualization, but the rest of the functionality that runs gradient descent is still 
 implemented and usable.
 
-This app is published at 
-
-    https://vaidehi8913.github.io/burer-monteiro
+This app is published [here](https://vaidehi8913.github.io/burer-monteiro).
 
 We developed this tool as part of 
 > The Burer-Monteiro SDP method can fail even above the Barvinok-Pataki bound  

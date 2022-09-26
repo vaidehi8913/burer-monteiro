@@ -6,7 +6,7 @@ This directory contains code and results for experiments associated with the pap
 
 ## Code
 
-Our code is written in MATLAB, and relies on the awesome [Manopt package](manopt.org).  
+Our code is written in MATLAB, and relies on the awesome [Manopt package](https://manopt.org).  
 
 ``deterministic_experiment.m`` uses our deterministic construction of a pseudo-PD matrix,
 and runs trials using random initializations at different specified distances from our target spurious local minimum.
